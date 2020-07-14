@@ -1,0 +1,28 @@
+{
+  "name": "lab6",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mongo:start": "docker run --rm -p=27017:27017 --env-file=./.env --name=topespi--lab6--mongo -d centos/mongodb-32-centos7",
+    "mongo:stop": "docker stop topespi--lab6--mongo",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "javascript",
+    "docker"
+  ],
+  "author": "Amilcar Fuentes",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.20",
+    "nodemon": "^2.0.4"
+  }
+}
